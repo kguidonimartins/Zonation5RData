@@ -1,21 +1,19 @@
 # Zonation5RData
 
-Educational GeoTIFF layers for [Zonation](https://github.com/cbig/zonation-core) and ZonationR workflows. Rasters use WGS84 (EPSG:4326). This package is **not** on CRAN; install from GitHub.
-
-Design follows the **data package** / **raw data in `inst/extdata/`** guidance in Wickham & Bryan, [*R Packages* (2e), ch. Data](https://r-pkgs.org/data.html): GeoTIFFs ship as installed files (not `data/*.rda`), and helpers wrap `system.file()` so paths work from both installed packages and `devtools::load_all()`.
+Educational GeoTIFF layers for [Zonation](https://github.com/zonationteam/Zonation5) and [ZonationR](https://github.com/thiago-cav/ZonationR) workflows. Rasters use WGS84 (EPSG:4326). This package is **not** on CRAN; install from GitHub.
 
 ## Installation
 
 ```r
 # install.packages("pak")  # if needed
-pak::pak("kguidonimartins/Zonation5RData")
+pak::pak("thiago-cav/Zonation5RData")
 ```
 
 Or with **remotes**:
 
 ```r
 # install.packages("remotes")
-remotes::install_github("kguidonimartins/Zonation5RData")
+remotes::install_github("thiago-cav/Zonation5RData")
 ```
 
 ## Usage
@@ -59,9 +57,12 @@ To read a raster (example with **terra**):
 
 ## Contents and attribution
 
-Layer descriptions, folder layout, and references are in:
+Layer descriptions, folder layout, and references can be accessed with:
+```r
+zonation5rdata_info()
+```
 
-- `system.file("extdata", "metadata.md", package = "Zonation5RData")`
+
 
 Please cite this package and the original data sources (see `metadata.md`) when you use these materials.
 
