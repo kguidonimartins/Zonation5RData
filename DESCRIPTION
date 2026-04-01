@@ -11,14 +11,14 @@ Authors@R: c(
             )
 Description: Curated GeoTIFF layers for teaching and experimentation with
     Zonation and ZonationR. Rasters use WGS84 (EPSG:4326). This is not a
-    definitive research-grade dataset. Raw rasters live under 'inst/extdata/'
-    as recommended for non-R data in R Packages (2e). See 'inst/extdata/metadata.md'
-    for sources, layer layout, and attribution.
+    definitive research-grade dataset. See 'inst/extdata/metadata.md'
+    for data sources and attribution.
 License: MIT + file LICENSE
 Encoding: UTF-8
 Depends: R (>= 4.0.0)
-URL: https://r-pkgs.org/data.html
+URL: https://github.com/thiago-cav/Zonation5RData
 Imports: 
     rmarkdown
 Suggests: 
     rstudioapi
+RoxygenNote: 7.3.3

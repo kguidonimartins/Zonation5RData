@@ -1,16 +1,19 @@
 # Path helpers for inst/extdata — see Wickham & Bryan, R Packages 2e, ch. Data
 # https://r-pkgs.org/data.html#sec-data-extdata
 
+#' @export
 zonation5rdata_path <- function(..., must_work = FALSE) {
   system.file("extdata", ..., package = "Zonation5RData", mustWork = must_work)
 }
 
+#' @export
 zonation5rdata_root <- function(must_work = TRUE) {
   system.file("extdata", package = "Zonation5RData", mustWork = must_work)
 }
 
 # zonation5rdata_example — see man/zonation5rdata_example.Rd and r-pkgs.org/data.html
 
+#' @export
 zonation5rdata_example <- function(path = NULL) {
   root <- system.file("extdata", package = "Zonation5RData", mustWork = TRUE)
   if (is.null(path)) {
@@ -27,6 +30,7 @@ zonation5rdata_example <- function(path = NULL) {
   )
 }
 
+#' @export
 zonation5rdata_list <- function(..., recursive = TRUE, full.names = FALSE,
                                 include.dirs = FALSE) {
   root <- system.file("extdata", package = "Zonation5RData", mustWork = TRUE)
